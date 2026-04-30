@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body>
+
+<div id="loader"><div class="spinner"></div></div>
+
+<div id="progressBar"></div>
+<nav>
+    <button class="btn" onclick="toggleTheme()">🌙 / ☀️</button>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#form">FORM</a>
+    </div>
+</nav>
+
+<section id="home">
+    <h2>HOME</h2>
+    <h1 id="typing"></h1>
+    <p class="hero-text">Building responsive, user-friendly and interactive web applications.</p>
+    <p class="hero-subtext">Looking for internship opportunities to build real-world applications.</p>
+    <img src="images/developer-illustration.png" alt="Developer Illustration" class="hero-image">
+
+    <br><br>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+    <br><br>
+    <div class="social">
+        <a href="https://github.com/shanmathi-dev" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/shanmathi341" target="_blank" class="btn">LinkedIn</a>
+    </div>
+</section>  
+
+<section id="about">
+                    <h2>ABOUT</h2>
+                    <img src="images/Profile_Photo.png" alt="profile" width="150px" style="border-radius: 50%;">
+                    <h3>C.T.Shanmathi</h3>
+                    <p>BE CSE Student</p>
+                    <p>Frontend Developer</p>
+                    <p>Java Developer</p>
+                    <p>Looking for Internship Opportunities</p>
+                    <p>I enjoy building clean and responsive web applicationsand continuously improving my coding skills.</p>
+</section>
+
+<section id="skills">
+    <h2>SKILLS</h2>
+
+    <div class="skill-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>SQL</span>
+    </div>
+
+    <div class="skill">
+        <p>HTML - 90%</p>
+        <div class="progress"><div class="progress-bar html"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS - 85%</p>
+        <div class="progress"><div class="progress-bar css"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript - 75%</p>
+        <div class="progress"><div class="progress-bar js"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Java - 70%</p>
+        <div class="progress"><div class="progress-bar java"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Python - 65%</p>
+        <div class="progress"><div class="progress-bar python"></div></div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>PROJECTS</h2>
+
+    <p>HTML • CSS • JavaScript</p>
+
+
+    <div class="project-card">
+        <img src="images/task-manager-preview.png">
+        <h3>To-Do App</h3>
+
+        <p>Task management app with add/delete/update features</p>
+        <p>HTML • CSS • JavaScript</p>>
+
+        <a href="https://shanmathi-dev.github.io/Advanced-Productivity-Dashboard/" class="btn" target="_blank">Live Demo</a>
+
+        <a href="https://github.com/shanmathi-dev/Advanced-Productivity-Dashboard" class="btn" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <img src="images/Portfolio_Website.png">
+        <h3>Portfolio Website</h3>
+
+        <p>Responsive personal portfolio website</p>
+        <p>HTML • CSS • JavaScript</p>
+
+        <a href="https://shanmathi-dev.github.io/portfolio/" class="btn" target="_blank">Live Demo</a>
+        <a href="https://github.com/shanmathi-dev/portfolio" class="btn" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <img src="images/Form_Validation.png" alt="Login Form Project" class="login-img">
+
+        <h3>Login Form Validation</h3>
+
+        <p>Modern login form validation system</p>
+        <p>HTML • CSS • JavaScript</p>
+
+        <a href="https://shanmathi-dev.github.io/Login-form/" class="btn" target="_blank">Live Demo</a>
+        <a href="https://github.com/shanmathi-dev/Login-form" class="btn" target="_blank">GitHub</a>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>CONTACT</h2>
+
+    <div class="contact-icons">
+
+        <a href="https://github.com/shanmathi-dev" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/shanmathi341" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="EmailJS:Shanmathi341@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+    </div>
+
+    <p class="contact-text">
+        Open for internships and freelance opportunities
+    </p>
+</section> 
+
+<section id="form">
+    <h2>FORM</h2>
+    <form action="EmailJS:Shanmathi341@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="successMsg"></p>
+    </form>
+</section>
+
+<footer>
+
+    <p>© 2026 C.T. Shanmathi | All Rights Reserved</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+    <p>Open for Internship Opportunities</p>
+
+    <div class="footer-social">
+     <a href="https://github.com/shanmathi-dev" target="_blank">GitHub</a>
+     <a href="https://linkedin.com/in/shanmathi341" target="_blank">LinkedIn</a>
+     <a href="EmailJS:Shanmathi341@gmail.com">Email</a>
+    </div>
+
+</footer>
+
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+<script src="script.js"></script>
+    
+    
+    </body>
+</html>
+
+
